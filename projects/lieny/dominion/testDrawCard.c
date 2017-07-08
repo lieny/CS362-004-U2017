@@ -3,6 +3,8 @@
 #include <string.h>
 #include <stdio.h>
 #include <assert.h>
+#include <math.h>	//added to remove warning on implicit declaration of 'floor'
+#include <stdlib.h>	//added to remove warning on implicit declaration of 'exit'
 #include "rngs.h"
 
 #define DEBUG 0
