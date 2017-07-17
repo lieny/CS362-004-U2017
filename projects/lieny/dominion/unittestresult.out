@@ -1,0 +1,53 @@
+Test1 for isGameOver passed!
+Test2 for isGameOver passed!
+Test3 for isGameOver passed!
+All test for isGameOver passed!
+
+Start testing fullDeckCount.
+Test1 for fullDeckCount passed!
+Test2 for fullDeckCount passed!
+Test3 for fullDeckCount passed!
+Test4 for fullDeckCount passed!
+All test for fullDeckCount passed!
+
+Start testing buyCard. 
+Test1 for buyCard passed!
+Test2 for buyCard passed!
+Test3 for buyCard passed!
+Test4 for buyCard passed!
+Test5 for buyCard passed!
+Test6 for buyCard passed!
+Test7 for buyCard passed!
+All tests for buyCard passed!
+
+Start testing scoreFor.
+Test score from hand passed!
+Test score from discard failed. The score is 13
+Test score from deck failed. The score is 0
+
+Start testing Adventurer Card
+Adventurer Card test1 failed.
+Adventurer Card test2 passed!
+
+Start testing Smithy Card
+hc2 = 8
+Smithy Card test1 failed.
+Smithy Card test2 passed!
+
+Start testing Village Card
+Village Card test1 passed!
+Village Card test2 failed.
+Village Card test3 passed!
+
+Start testing Steward Card
+Test1 for Steward Card passed!
+Test1 for Steward Card failed
+Test1 for Steward Card passed!
+
+File 'dominion.c'
+Lines executed:40.21% of 567
+Branches executed:46.78% of 419
+Taken at least once:33.89% of 419
+Calls executed:31.00% of 100
+Creating 'dominion.c.gcov'
+
