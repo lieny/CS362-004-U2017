@@ -14,6 +14,7 @@
 char inputChar()
 {
    	 //test with ascii codes ranging from 'a' to '}'
+   	 //excluding all control codes
 	int testRange = 126 - 32;
 	char ch = rand() % testRange + 32;
     	return ch;
