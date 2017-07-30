@@ -13,7 +13,7 @@
 #include "dominion.h"
 #include "rngs.h"
 
-#define NUM_TEST 500
+#define NUM_TEST 20000
 
 int checkVillageCard(struct gameState *post)
 {

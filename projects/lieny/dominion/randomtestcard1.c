@@ -13,7 +13,7 @@
 #include "dominion.h"
 #include "rngs.h"
 
-#define NUM_TEST 100
+#define NUM_TEST 20000
 
 int checkSmithyCard(struct gameState *post, int handPos){	
 	int r, p, postCount = 0, preCount = 0;
