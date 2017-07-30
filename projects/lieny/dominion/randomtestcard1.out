@@ -1,0 +1,112 @@
+File 'dominion.c'
+Lines executed:44.27% of 567
+Branches executed:48.69% of 419
+Taken at least once:37.23% of 419
+Calls executed:33.00% of 100
+Creating 'dominion.c.gcov'
+
+Testing smithyCard. 
+Random Tests. 
+hand count should be: 166, actual count is 167.
+hand count should be: 282, actual count is 283.
+hand count should be: 198, actual count is 199.
+hand count should be: 7, actual count is 8.
+hand count should be: 425, actual count is 426.
+hand count should be: 7, actual count is 8.
+hand count should be: 25, actual count is 26.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 126, actual count is 127.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 304, actual count is 305.
+hand count should be: 87, actual count is 88.
+hand count should be: 7, actual count is 8.
+hand count should be: 367, actual count is 368.
+hand count should be: 7, actual count is 8.
+hand count should be: 117, actual count is 118.
+hand count should be: 191, actual count is 192.
+hand count should be: 95, actual count is 96.
+hand count should be: 7, actual count is 8.
+hand count should be: 279, actual count is 280.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 374, actual count is 375.
+hand count should be: 7, actual count is 8.
+hand count should be: 247, actual count is 248.
+hand count should be: 7, actual count is 8.
+hand count should be: 107, actual count is 108.
+hand count should be: 201, actual count is 202.
+hand count should be: 201, actual count is 202.
+hand count should be: 472, actual count is 473.
+hand count should be: 7, actual count is 8.
+hand count should be: 228, actual count is 229.
+hand count should be: 495, actual count is 496.
+hand count should be: 407, actual count is 408.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 127, actual count is 128.
+hand count should be: 131, actual count is 132.
+hand count should be: 159, actual count is 160.
+hand count should be: 430, actual count is 431.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 327, actual count is 328.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 272, actual count is 273.
+hand count should be: 436, actual count is 437.
+hand count should be: 7, actual count is 8.
+hand count should be: 494, actual count is 495.
+hand count should be: 482, actual count is 483.
+hand count should be: 412, actual count is 413.
+hand count should be: 240, actual count is 241.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 439, actual count is 440.
+hand count should be: 184, actual count is 185.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 84, actual count is 85.
+hand count should be: 482, actual count is 483.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 155, actual count is 156.
+hand count should be: 7, actual count is 8.
+hand count should be: 380, actual count is 381.
+hand count should be: 7, actual count is 8.
+hand count should be: 247, actual count is 248.
+hand count should be: 496, actual count is 497.
+hand count should be: 7, actual count is 8.
+hand count should be: 340, actual count is 341.
+hand count should be: 267, actual count is 268.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 21, actual count is 22.
+hand count should be: 221, actual count is 222.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+hand count should be: 237, actual count is 238.
+hand count should be: 7, actual count is 8.
+hand count should be: 187, actual count is 188.
+hand count should be: 225, actual count is 226.
+hand count should be: 496, actual count is 497.
+hand count should be: 7, actual count is 8.
+hand count should be: 7, actual count is 8.
+Out of 100 tests, 0 passed, 100 failed.
+smithyCard Test Complete.
+
