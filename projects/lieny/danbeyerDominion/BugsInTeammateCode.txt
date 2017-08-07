@@ -1,0 +1,209 @@
+Author: Ya Lien
+Class: CS362
+Template Source: http://www.noverse.com/images/noverse-bug-reporting-template.txt
+
+Title:    AdventureRe() function Bug Report
+
+Class: Program does not behave as expected 
+
+Date:  8/04/2017         
+Reported By: Ya Lien  
+Email:   lieny@oregonstate.edu   
+
+
+Product:      dominion.c             
+Platform:     Linux                  
+Browser:    None                   
+URL:     None   
+
+Is it reproducible: Yes 
+
+Description
+===========
+
+AdventureRe() function failed the test case when the number of treasure card on hand was tested against the initial amount. 
+It appears that this function draws 1 treasure card when it is supposed to draw 2.
+
+Steps to Produce/Reproduce
+--------------------------
+
+1. initialize the game
+2. set treasure card on hand to a certain value
+3. set treasure card on deck to be more than 3
+4. calls cardEffect() and pass in adventurer card as an arguments.
+5. count the treasure cards on hand and compare with starting amount
+
+
+Expected Results
+----------------
+number of treasure card on hand should be 2 more than the starting amount.
+
+
+Actual Results
+--------------
+number of treasure card is 1 more than the starting amount.
+
+
+Workarounds
+-----------
+None. The bug needs to be fixed for the program do work as expected.
+
+
+Attachments
+-----------
+Code causing bug:
+int AdventurerRe(struct gameState *state){
+...
+while(drawntreasure<2){
+    ...
+    if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold)
+      drawntreasure+=2;	//Bug found
+     ...
+  }
+}
+
+Suggested fix:
+
+Change drawntreasure += 2 to drawntreasure++
+
+
+=============================================================================
+
+
+Title:    SmithyRe() function Bug Report
+
+Class: Program does not behave as expected 
+
+Date:  8/04/2017         
+Reported By: Ya Lien  
+Email:   lieny@oregonstate.edu   
+
+
+Product:      dominion.c             
+Platform:     Linux                  
+Browser:    None                   
+URL:     None   
+
+Is it reproducible: Yes 
+
+Description
+===========
+
+SmithyRe() function failed the test case when the number of hand count on hand was tested against the initial amount. 
+The hand count is off by 1 card.
+
+Steps to Produce/Reproduce
+--------------------------
+1. initialize the game
+2. set number of cards on hand to a certain value
+3. set deck cards to be the max number of cards allowed
+4. calls cardEffect() and pass in current player, smithy card, and hand pos as arguments.
+5. count the cards on hand and compare with starting amount.
+
+
+Expected Results
+----------------
+number of card on hand should be 3 more than the starting amount
+
+
+Actual Results
+--------------
+number of card on hand is 4 more than the starting amount.
+
+
+Workarounds
+-----------
+None. The bug needs to be fixed for the program do work as expected.
+
+
+Attachments
+-----------
+Code causing bug:
+int SmithyRe(int currentPlayer, struct gameState *state, int handPos) {
+	...
+      for (i = 0; i < 4; i++)		//Bug found
+	{
+	  drawCard(currentPlayer, state);
+	}			
+	...
+}
+Suggested fix:
+
+Change for (i = 0; i < 4; i++)2 to for (i = 0; i < 4; i++)
+
+
+====================================================================================
+
+Title:   scoreFor() Function Bug Report 
+
+Class:	Program does not behave as expected 
+
+
+ate:  8/04/2017         
+Reported By: Ya Lien  
+Email:   lieny@oregonstate.edu   
+
+
+Product:      dominion.c             
+Platform:     Linux                  
+Browser:    None                   
+URL:     None   
+
+Is it reproducible: Yes 
+
+
+Description
+===========
+scoreFor() does not reture the correct score. While the score counted from hand is correct, 
+the score counted from discard pile and deck pile is off.
+
+
+Steps to Produce/Reproduce
+--------------------------
+1. initialize the game
+2. set number of cards on hand to a certain value
+3. set the number of cards on discard pile to a certain value
+4. set the number of cards on deck to a certain value
+5. calls scoreFor() and pass arguments.
+6. count the cards on hand, deck, and discard and calculate the score earn from each pile.
+7. compare the result.
+
+
+Expected Results
+----------------
+The results are different each time, depends on the type of cards.
+
+
+Actual Results
+--------------
+The results are different each time, depends on the type of cards.
+The score from deck always returns 0.
+
+
+Workarounds
+-----------
+None. The bug needs to be fixed for the program do work as expected.
+
+
+Attachments
+-----------
+Code causing bug:
+
+int scoreFor (int player, struct gameState *state) {
+	...
+	//score from deck
+	for (i = 0; i < state->discardCount[player]; i++) //BUG
+	{
+		if (state->deck[player][i] == curse) { score = score - 1; };
+		if (state->deck[player][i] == estate) { score = score + 1; };
+		if (state->deck[player][i] == duchy) { score = score + 3; };
+		if (state->deck[player][i] == province) { score = score + 6; };
+		if (state->deck[player][i] == great_hall) { score = score + 1; };
+		if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+	}
+	...
+}
+
+Suggested fix:
+
+Change for (i = 0; i < state->discardCount[player]; i++) to for (i = 0; i < state->deck[player]; i++) 

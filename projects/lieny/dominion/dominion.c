@@ -1242,7 +1242,7 @@ int adventurerCard(struct gameState *state)
 	int z = 0;	// this is the counter for the temp hand
 	int currentPlayer = whoseTurn(state);
 
-	while(drawntreasure < 3){	//while(drawntreasure < 2)
+	while(drawntreasure < 2){	//Bug Fixed
 		if (state->deckCount[currentPlayer] <1){//if the deck is empty we need to shuffle discard and add to deck
 			shuffle(currentPlayer, state);
 		}
@@ -1269,7 +1269,7 @@ int smithyCard(struct gameState *state, int handPos)
 	int i = 0;
 
 	//+3 Cards
-	for(i = 0; i < 4; i++)	//for(i = 0; i < 3; i++)
+	for(i = 0; i < 3; i++)	//Bug Fixed
 	{
 		drawCard(currentPlayer, state);
 	}
